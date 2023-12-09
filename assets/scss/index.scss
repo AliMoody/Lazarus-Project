@@ -1,0 +1,98 @@
+@import './form' , './login' , './post';
+
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-image: url(../media/ultra-detailed-nebula-abstract-wallpaper-4.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    
+}
+
+
+.c-nav{
+    
+    border-radius: 10px;
+}
+
+.bg-backdrop{
+    backdrop-filter: grayscale(80%);
+
+}
+.carousel-img{
+    border-radius: 5px;
+    background-size: cover !important;
+    height: 575.4px;
+    object-fit: cover;
+    opacity: 1;
+    transition: all .5s ease;
+}
+.carousel-img:hover{
+    
+    opacity: .05;
+    
+    
+    
+}
+
+
+.c-carousel{
+    position: relative;
+    backdrop-filter: sepia(80%);
+    
+}
+
+.carousel-text{
+    position: absolute;
+    bottom: 46%;
+    left: 44%;
+    z-index: 2;
+}
+
+.carousel-link:hover{
+    color: black !important;
+}
+.border-radius{
+    border-radius: 30px;
+}
+
+.captcha{
+    
+    width: 300px;
+    height: 50px;
+    border: 1px solid #ffc107;
+    border-radius: 5px;
+
+}
+.captcha:focus{
+    
+    border-color: #ffc107 ;
+    box-shadow: 0 0 13px #ffc107;
+}
+.captcha::placeholder{
+    color: black;
+}
+.captcha:focus-visible{
+    outline: none;
+}
+.captcha::placeholder{
+    margin-left: 30px;
+}
+
+.backdrop{
+    background-color: rgba(0, 0, 0, 0.534);
+}
+
+.customFooter{
+    background-color: #1e1e1e89;
+    border-radius: 10px;
+    backdrop-filter: grayscale(80%);
+    
+}
+
+
+.lorem{
+    font-size: x-large ;
+    color: #ffc107;
+}

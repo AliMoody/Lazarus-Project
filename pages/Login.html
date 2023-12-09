@@ -1,0 +1,130 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css">
+        <script src="../assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <link rel="stylesheet" href="../assets/css/index.css">
+        <script src="../assets/js/anime.min.js"></script>
+        <script src="../assets/js/Login.js" defer></script>
+        <title>Login Page</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="row header justify-content-center">
+                <div class=" col-md-10 justify-content-center bg-backdrop c-nav mt-4 mb-4">
+                    <nav class="navbar navbar-expand-lg w-100 d-flex justify-content-center bg-backdrop   ">
+                      <div class="container-fluid text-light bg-backdrop text-light">
+                        <a class="navbar-brand text-light" href="#">GUEST</a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                          data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                          aria-label="Toggle navigation">
+                          <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                              <a class="nav-link text-light" aria-current="page" href="../index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                              <button id="loginLink" type="button" class="btn nav-link text-warning disabled" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">
+                                Login
+                              </button>
+                            </li>
+                            <li class="nav-item">
+                              <button id="postLink" type="button" class="btn text-light nav-link"
+                                data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                                Posts
+                              </button>
+                            </li>
+                          </ul>
+                          <div class=" justify-content-end">
+                            <a href="#" class="nav-link disabled" aria-current="page">prod. by <span
+                                class="text-warning">Lazarus</span> </a>
+                          </div>
+                        </div>
+                      </div>
+                    </nav>
+                  </div>
+            </div>
+            <div class="row main justify-content-center align-items-center">
+                <div class="col-md-10">
+                    <div class="row justify-content-center">
+                        <div class="col-md-8">
+                            <div class="c-container">
+                                <div class="left">
+                                  <div class="login">Login</div>
+                                  <div class="eula">By logging in you agree to the ridiculously long terms that you didn't bother to read</div>
+                                </div>
+                                <div class="right">
+                                  <svg viewBox="0 0 320 300">
+                                    <defs>
+                                      <linearGradient
+                                                      inkscape:collect="always"
+                                                      id="linearGradient"
+                                                      x1="13"
+                                                      y1="193.49992"
+                                                      x2="307"
+                                                      y2="193.49992"
+                                                      gradientUnits="userSpaceOnUse">
+                                        <stop
+                                              style="stop-color:#ff00ff;"
+                                              offset="0"
+                                              id="stop876" />
+                                        <stop
+                                              style="stop-color:#ff0000;"
+                                              offset="1"
+                                              id="stop878" />
+                                      </linearGradient>
+                                    </defs>
+                                    <path d="m 40,120.00016 239.99984,-3.2e-4 c 0,0 24.99263,0.79932 25.00016,35.00016 0.008,34.20084 -25.00016,35 -25.00016,35 h -239.99984 c 0,-0.0205 -25,4.01348 -25,38.5 0,34.48652 25,38.5 25,38.5 h 215 c 0,0 20,-0.99604 20,-25 0,-24.00396 -20,-25 -20,-25 h -190 c 0,0 -20,1.71033 -20,25 0,24.00396 20,25 20,25 h 168.57143" />
+                                  </svg>
+                                  <div class="form">
+                                    <label for="email">Username</label>
+                                    <input type="text" id="email">
+                                    <label for="password">Password</label>
+                                    <input type="password" id="password">
+                                    <input type="submit" id="submit" value="Submit" class="text-light">
+                                  </div>
+                                </div>
+                              </div>
+                              
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row footer justify-content-center">
+                <div class="col-md-10">
+                        
+                </div>
+            </div>
+            <div class="toast-container position-fixed top-50 end-0 p-3">
+              <div id="liveToast" class="toast bg-success" role="alert" aria-live="assertive" aria-atomic="true">
+                  <div class="toast-header">
+                      <strong class="me-auto">important</strong>
+                      <small>just now</small>
+                      <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                  </div>
+                  <div class="toast-body text-light">
+                      your account has been created ! <br>
+                      you automatically logged in !
+                  </div>
+              </div>
+          </div>
+          <div class="toast-container position-fixed top-50 end-0 p-3">
+              <div id="liveToast2" class="toast bg-primary" role="alert" aria-live="assertive" aria-atomic="true">
+                  <div class="toast-header ">
+                      <strong class="me-auto">important</strong>
+                      <small>just now</small>
+                      <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                  </div>
+                  <div class="toast-body">
+                      welcome back to your account !
+                  </div>
+              </div>
+          </div>
+        </div>
+    </body>
+    </html>

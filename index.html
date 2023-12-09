@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets/bootstrap/css/bootstrap.min.css">
+  <script src="./assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="./assets/css/index.css">
+  <script src="./assets/js/index.js" defer></script>
+  <title>Home</title>
+</head>
+
+<body>
+  <div class="container-fluid vh-100 ">
+    <div class="container vh-100">
+      <div class="row justify-content-center mt-4 mb-4 text-light">
+        <div class=" col-md-10 justify-content-center bg-backdrop c-nav">
+          <nav class="navbar navbar-expand-lg w-100 d-flex justify-content-center bg-backdrop">
+            <div class="container-fluid text-light bg-backdrop text-light">
+              <a class="navbar-brand text-light" href="#" id="userprofile">GUEST</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link text-warning disabled" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <button id="loginLink" type="button" class="btn text-light nav-link" data-bs-toggle="modal"
+                      data-bs-target="#exampleModal">
+                      Login
+                    </button>
+                  </li>
+                  <li class="nav-item">
+                    <button id="postLink" type="button" class="btn text-light nav-link"
+                      data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                      Posts
+                    </button>
+                  </li>
+                </ul>
+                <div class=" justify-content-end">
+                  <a href="#" class="nav-link disabled" aria-current="page">prod. by <span
+                      class="text-warning">Lazarus</span> </a>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+      <div class="row index-main justify-content-center mt-1">
+        <div class="col-md-10  ">
+          <div class="row justify-content-center">
+            <div class="col-md-10">
+              <div id="carouselExampleIndicators" class="carousel slide border-radius">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active c-carousel" id="caroImage1">
+                    <img src="./assets/media/subscribe-3534409.jpg" class="d-block w-100 carousel-img" alt="...">
+                    <div class="carousel-text text-light d-none" id="caroText1">
+                      <button id="loginLink" type="button" class="btn btn-outline-warning text-light carousel-link"
+                        data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Go To Login
+                      </button></div>
+                  </div>
+                  <div class="carousel-item c-carousel" id="caroImage2">
+                    <img src="./assets/media/email-3249062_1920.png" class="d-block w-100 carousel-img" alt="...">
+                    <div class="carousel-text text-light d-none" id="caroText2">
+                      <button id="postLink" type="button" class="btn btn-outline-warning text-light carousel-link"
+                        data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                        Go To Posts
+                      </button>
+
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row footer justify-content-center mt-2 ">
+        <div class="col-md-10">
+          <div class="row justify-content-center ">
+            <div class="col-md-3 m-1 customFooter p-3">
+              <div class="row text-light">
+                Contact Us :
+              </div>
+              <div class="row justify-content-center align-items-center">
+                <div class="col-md-4 text-light">phone : </div>
+                <div class="col-md-8 text-light"> 09123456789 </div>
+              </div>
+              <div class="row text-light">
+                <div class="col-md-4">
+                  Email :
+                </div>
+                <div class="col-md-8">
+                  domain@gmail.com
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 m-1 customFooter p-3">
+              <div class="row justify-content-center">
+                <div class="col-md-4 justify-content-center align-items-center">
+                  <a class="nav-link text-warning disabled" aria-current="page" href="#">Home</a>
+                </div>
+              </div>
+              <div class="row justify-content-center">
+                <div class="col-md-4 justify-content-center align-items-center">
+                  <button id="loginLink" type="button" class="btn text-light nav-link" data-bs-toggle="modal"
+                    data-bs-target="#exampleModal">
+                    Login
+                  </button>
+                </div>
+              </div>
+              <div class="row justify-content-center">
+                <div class="col-md-4 justify-content-center align-items-center">
+                  <button id="postLink" type="button" class="btn text-light nav-link"
+                    data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                    Posts
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 m-1 customFooter p-3">
+              <div class="row justify-content-center">
+                <div class="col-md-10 justify-content-center align-items-center">
+                  <p class="text-light"><span class="lorem">Lorem</span> ipsum dolor sit amet consectetur adipisicing </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Robot Finder</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body d-flex flex-column align-items-center justify-content-center" id="postCaptcha">
+
+          </div>
+          <div class="modal-footer">
+
+            <button type="button" class="btn btn-danger disabled" id="postSubmit">answer is WRONG!</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content d-flex justify-content-center">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Robot Finder</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body d-flex flex-column align-items-center justify-content-center " id="loginCaptcha">
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger disabled" id="loginSubmit">answer is WRONG!</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

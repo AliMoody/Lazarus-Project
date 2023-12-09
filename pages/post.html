@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css">
+    <script src="../assets/bootstrap/js/bootstrap.bundle.min.js" defer></script>
+    <link rel="stylesheet" href="../assets/css/index.css">
+    <script src="../assets/js/post.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="row justify-content-center mt-4 mb-4 text-light">
+            <div class=" col-md-10 justify-content-center bg-backdrop c-nav">
+              <nav class="navbar navbar-expand-lg w-100 d-flex justify-content-center bg-backdrop">
+                <div class="container-fluid text-light bg-backdrop text-light">
+                  <a class="navbar-brand text-light" href="#" id="userprofile">GUEST</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link text-light " aria-current="page" href="../index.html">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <button id="loginLink" type="button" class="btn text-light nav-link" data-bs-toggle="modal"
+                          data-bs-target="#exampleModal">
+                          Login
+                        </button>
+                      </li>
+                      <li class="nav-item">
+                        <button id="postLink" type="button" class="btn nav-link disabled text-warning"
+                          data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                          Posts
+                        </button>
+                      </li>
+                    </ul>
+                    <div class=" justify-content-end">
+                      <a href="#" class="nav-link disabled" aria-current="page">prod. by <span
+                          class="text-warning">Lazarus</span> </a>
+                    </div>
+                  </div>
+                </div>
+              </nav>
+            </div>
+          </div>
+        <div class="row post-main justify-content-center mt-2">
+            <div class="col-md-10">
+              <div class="post" >
+                <ul class="d-flex justify-content-evenly align-items-center " id="posts">
+
+                </ul>
+              </div>
+            </div>
+        </div>
+        <div class="row footer justify-content-center mt-2 ">
+          <div class="col-md-10">
+            <div class="row justify-content-center ">
+              <div class="col-md-3 m-1 customFooter p-3">
+                <div class="row text-light">
+                  Contact Us :
+                </div>
+                <div class="row justify-content-center align-items-center">
+                  <div class="col-md-4 text-light">phone : </div>
+                  <div class="col-md-8 text-light"> 09123456789 </div>
+                </div>
+                <div class="row text-light">
+                  <div class="col-md-4">
+                    Email :
+                  </div>
+                  <div class="col-md-8">
+                    domain@gmail.com
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3 m-1 customFooter p-3">
+                <div class="row justify-content-center">
+                  <div class="col-md-4 justify-content-center align-items-center">
+                    <a class="nav-link text-light " aria-current="page" href="../index.html">Home</a>
+                  </div>
+                </div>
+                <div class="row justify-content-center">
+                  <div class="col-md-4 justify-content-center align-items-center">
+                    <button id="loginLink" type="button" class="btn text-light nav-link" data-bs-toggle="modal"
+                      data-bs-target="#exampleModal">
+                      Login
+                    </button>
+                  </div>
+                </div>
+                <div class="row justify-content-center">
+                  <div class="col-md-4 justify-content-center align-items-center">
+                    <button id="postLink" type="button" class="btn text-warning nav-link disabled"
+                      data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                      Posts
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3 m-1 customFooter p-3">
+                <div class="row justify-content-center">
+                  <div class="col-md-10 justify-content-center align-items-center">
+                    <p class="text-light"><span class="lorem">Lorem</span> ipsum dolor sit amet consectetur adipisicing </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content d-flex justify-content-center">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Robot Finder</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body d-flex flex-column align-items-center justify-content-center " id="loginCaptcha">
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger disabled" id="loginSubmit">answer is WRONG!</button>
+          </div>
+        </div>
+      </div>
+    </div>
+</body>
+</html>
